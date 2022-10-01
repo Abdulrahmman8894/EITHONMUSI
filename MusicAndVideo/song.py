@@ -83,7 +83,7 @@ async def song(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"** اسم الاغنية ⚡️ :** `{urlissed}`",
+            f"** اسم السورة ⚡️ :** `{urlissed}`",
             file_stark,
         ),
     )
@@ -238,7 +238,7 @@ async def vsong(client, message: Message):
     urlissed = get_text(message)
 
     pablo = await client.send_message(
-        message.chat.id, f"** اسم الاغنية ⚡️ :** `{urlissed}`"
+        message.chat.id, f"** اسم السورة ⚡️ :** `{urlissed}`"
     )
     if not urlissed:
         await pablo.edit(
